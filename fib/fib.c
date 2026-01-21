@@ -53,8 +53,9 @@ int main() {
 			b = tmp;
 			uintn_add(&b, &a);
 		}
+		(void)b.buf[0];
 	}
 	printf("%lfs\n", secs() - start);
 	//uintn_print(&b);
-	return b.buf[0];
+	return 0;
 }
